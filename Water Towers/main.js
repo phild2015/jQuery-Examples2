@@ -17,7 +17,7 @@ function findMyImage(item){
   var myKids = $(item).children();
   var myImage = myKids[0];
   var imageSrc = $(myImage).attr("src");
-  var regExPatt = /[0-9]/;
+  var regExPatt = /[0-9]+/;
   var regExItem = new RegExp(regExPatt);
   var imageNum = regExItem.exec (imageSrc);
   console.log(imageNum);
