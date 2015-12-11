@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Example File 1</title>
+</head>
+<body>
+    <header>
+      <h1>Example File 1</h1>
+    </header>
+    <main>
+      <p>Try this form.</p>
+      <button id="myButton" type="submit">Click Me!</button>
+      <div class="myText"></div>
+      <button id="calculate" type="submit">Calculate</button>
+      <p id="result">Result is:</p>
+<<<<<<< HEAD
+      <a href="#main" id="maintag">Random Link</a>
+=======
+
+      <a href="#main" id="maintag">Random Link</a>
+
+>>>>>>> origin/master
+    </main>
+    <footer>
+    </footer>
+    <script>
+    var myButton = document.getElementById('myButton');
+
+    myButton.addEventListener("click", function(){
+	     alert("you clicked me");
+<<<<<<< HEAD
+     });
+
+     var myCalculate = document.getElementById('calculate');
+
+     myCalculate.addEventListener("click", function(){
+
+   calculator();
+
+ });
+
+    function calculator(){
+    var val1 = prompt("Enter first number");
+    var val2 = prompt("Enter second number");
+    var myPara = document.getElementById('result');
+    var myParaContent = myPara.textContent;
+    myPara.textContent = myParaContent + " " + (parseInt(val1) + parseInt(val2));
+}
+    var myLink = document.getElementById('maintag')
+      myLink.addEventListener("mouseover", function(){
+        calculator();
+
+      });
+=======
+    });
+    var myCalculate = document.getElementById("calculate");
+    myCalculate.addEventListener("click", function(){
+
+      calculator();
+
+    });
+
+    function calculator(){
+      var val1 = prompt("Enter First Number");
+      var val2 = prompt("Enter 2nd Number");
+
+      var myPara = document.getElementById("result");
+      var myParaContent = myPara.textContent;
+      myPara.textContent = myParaContent + " " + (parseInt(val1) + parseInt(val2));
+  };
+
+    var myLink = document.getElementById("maintag");
+    myLink.addEventListener("mouseover", function(){
+      calculator();
+    });
+
+>>>>>>> origin/master
+    </script>
+</body>
+</html>
